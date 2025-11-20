@@ -53,11 +53,14 @@ Instalar dependencias:
 Se ejecutan los siguientes comandos desde el mismo directorio donde se encuentran los archivos:
 
 ```
-#### Compilar versión basada en procesos
-`gcc -o procesos procesos.c -pthread -lrt`
 
-#### Compilar versión basada en hilos
-`gcc -o hilos hilos.c -pthread`
+- Compilar versión basada en procesos
+
+gcc -o procesos procesos.c -pthread -lrt
+
+- Compilar versión basada en hilos
+
+gcc -o hilos hilos.c -pthread
 ```
 <hr>
 
