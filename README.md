@@ -47,6 +47,8 @@ Instalar dependencias:
 
 ### Compilación
 <hr>
+Se ejecutan los siguientes comandos desde el mismo directorio donde se encuentran los archivos:
+
 #### Compilar versión basada en procesos
 `gcc -o procesos procesos.c -pthread -lrt`
 
@@ -56,20 +58,25 @@ Instalar dependencias:
 ### Archivos necesarios
 <hr>
 Es importante contar con estos archivos dentro del repositorio 
+```
 - procesos.c
 - hilos.c
 - Transacciones.txt
+```
 
 ### Ejecución
 <hr>
 Se deben ejecutar los programas desde la terminal con los siguientes comandos: 
+```
 ./procesos
 ./hilos
+```
 
 ### Resultados
 <hr>
 Cada implementación genera un archivo:
 
+```
 Archivo	Descripción
 - TiempoProcesos.txt — Resultados de la versión con fork()
 - TiempoHilos.txt —	Resultados de la versión con pthread
@@ -78,6 +85,7 @@ Estos archivos incluyen:
 - Saldo final después de aplicar todas las transacciones
 - Tiempo total de ejecución
 - Registro de cada operación procesada
+```
 
 ### Verificación 
 <hr>
@@ -92,7 +100,7 @@ Evaluar:
 
 - Diferencias prácticas entre procesos e hilos
 - Costos de creación y sincronización
--Comportamiento bajo carga concurrente realista
+- Comportamiento bajo carga concurrente realista
 
 ### Licencia
 <hr>
